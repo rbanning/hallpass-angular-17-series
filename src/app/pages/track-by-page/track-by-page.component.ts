@@ -17,8 +17,18 @@ export class TrackByPageComponent {
   employees$: Observable<IPerson[]>;
 
   constructor(
-    service: PersonService
+    protected service: PersonService
   ) {
     this.employees$ = service.load();
+  }
+
+
+  toggleArchived(item: IPerson) {    
+    item.archived = !item.archived;
+    this.service.update(item);
+  }
+
+  addRandom() {
+    this.service.addRandom();
   }
 }

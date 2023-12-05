@@ -1,4 +1,8 @@
 :host {
   @apply flex gap-4 border-2 border-neutral-200 rounded shadow shadow-neutral-300
     transition-colors hover:bg-neutral-100;
+
+  &.archived {
+    @apply bg-accent-500/50 hover:bg-accent-500;
+  }
 }

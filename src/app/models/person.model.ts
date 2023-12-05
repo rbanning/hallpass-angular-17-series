@@ -4,6 +4,7 @@ export interface IPerson extends IBaseModel {
   firstName: string;
   lastName: string;
   email: string;
+  avatar: string;
 }
 
 export class Person extends BaseModel implements IPerson {

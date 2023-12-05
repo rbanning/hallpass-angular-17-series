@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { Nullable } from '@app/common';
 import { IPerson } from '@app/models';
 
@@ -13,4 +13,9 @@ import { IPerson } from '@app/models';
 export class PersonBriefComponent {
   @Input()
   person: Nullable<IPerson>;
+
+  @HostBinding('class.archived') 
+  get cssArchived() {
+    return this.person?.archived === true;
+  }
 }

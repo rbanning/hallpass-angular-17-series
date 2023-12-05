@@ -1,5 +1,14 @@
-<h1>Employees</h1>
+<h1 class="flex flex-wrap items-center justify-between gap-4">
+  <span>Employees</span>
+  <button class="text-lg py-1 px-2 border-2 rounded" (click)="addRandom()">Add New Employee</button>
+</h1>
 
-@for (person of (employees$ | async); track person.id) {
-  <app-person-brief [person]="person" class="my-8"></app-person-brief>
+@if (false) {
+  @for (person of (employees$ | async); track person.id) {
+    <app-person-brief [person]="person" class="my-8 cursor-pointer" (click)="toggleArchived(person)"></app-person-brief>
+  }
 }
+
+<div *ngFor="let item of (employees$ | async)">
+  <app-person-brief [person]="item" class="my-8 cursor-pointer" (click)="toggleArchived(item)"></app-person-brief>
+</div>
