@@ -1,0 +1,1 @@
+export type NewableModel<T> = { new(obj?: any): T };
