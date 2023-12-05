@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* global settings */
+html, body {
+  @apply text-neutral-600;
+  font-size: 18px;
+}
+h1 { @apply text-5xl font-light text-primary-600; }
+h2 { @apply text-3xl font-semibold text-primary-500; }
+h3 { @apply text-xl uppercase text-secondary-400; }
+
+/* common styles */
+.page-container {
+  @apply max-w-2xl mx-auto px-2 md:px-0;
+}

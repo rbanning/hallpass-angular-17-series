@@ -1,0 +1,6 @@
+:host {
+  @apply block mt-12 py-8 border-t-2 border-t-neutral-300 bg-neutral-300/50 text-neutral-500 text-sm;
+  .row {
+    @apply flex items-center justify-center gap-4;
+  }
+}
