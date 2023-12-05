@@ -1,8 +1,8 @@
 @if (person) {
   <div class="avatar">
-    <img [src]="person.avatar" [alt]="person.firstName + ' avatar'">
+    <img [src]="person.avatar" [alt]="person.firstName + ' avatar'" width="100px" class="w-[100px]">
   </div>
-  <div class="content">
+  <div class="content pt-4">
     <div class="text-xl">{{person.firstName}} {{person.lastName}}</div>
     <div class="text-sm font-mono">{{person.email}}</div>
   </div>  
