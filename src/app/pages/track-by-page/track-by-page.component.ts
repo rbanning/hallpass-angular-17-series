@@ -19,6 +19,6 @@ export class TrackByPageComponent {
   constructor(
     service: PersonService
   ) {
-    this.employees$ = service.fetchAll();
+    this.employees$ = service.load();
   }
 }

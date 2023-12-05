@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(
     protected service: PersonService
   ) {
-    service.fetchAll()
+    service.load()
       .subscribe({
         next: (results => console.log("DEBUG: next", results)),
         error: (err => console.log("DEBUG error", err)),
