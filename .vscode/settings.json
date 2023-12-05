@@ -1,0 +1,28 @@
+{
+  "css.customData": [
+    "./.vscode/css-data.json"
+  ],
+  "cSpell.words": [
+    "toastr"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#d825f9",
+    "activityBar.background": "#d825f9",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#5d4f03",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#d825f9",
+    "statusBar.background": "#c206e5",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#d825f9",
+    "statusBarItem.remoteBackground": "#c206e5",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#c206e5",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#c206e599",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#c206e5"
+}

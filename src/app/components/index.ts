@@ -1,0 +1,1 @@
+export * from './person-brief/person-brief.component';

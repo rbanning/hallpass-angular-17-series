@@ -1,0 +1,9 @@
+@if (person) {
+  <div class="avatar">
+    <img [src]="person.avatar" [alt]="person.firstName + ' avatar'">
+  </div>
+  <div class="content">
+    <div class="text-xl">{{person.firstName}} {{person.lastName}}</div>
+    <div class="text-sm font-mono">{{person.email}}</div>
+  </div>  
+}

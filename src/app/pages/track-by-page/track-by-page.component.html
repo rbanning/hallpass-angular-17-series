@@ -1,0 +1,5 @@
+<h1>Employees</h1>
+
+@for (person of (employees$ | async); track person.id) {
+  <app-person-brief [person]="person"></app-person-brief>
+}

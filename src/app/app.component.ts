@@ -11,8 +11,6 @@ import { PersonService } from '@app/services';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-17-series';
-
   constructor(
     protected service: PersonService
   ) {
