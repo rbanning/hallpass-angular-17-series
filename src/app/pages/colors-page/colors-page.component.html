@@ -1,0 +1,15 @@
+<h1 class="flex flex-wrap items-center justify-between gap-4">
+  <span>Colors</span>
+  <button class="text-lg py-1 px-2 border-2 rounded" (click)="addRandom()">Add New Color</button>
+</h1>
+
+<div class="my-8 flex flex-wrap gap-6">
+  @for (color of (colors$ | async); track color) {
+    <div
+      [title]="color" 
+      class="w-[100px] h-[100px] shadow-md"
+      [style]="{backgroundColor: color}"></div>
+  }
+</div>
+
+
