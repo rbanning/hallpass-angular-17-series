@@ -3,3 +3,4 @@ export * from './header/header.component';
 export * from './footer/footer.component';
 
 export * from './person-brief/person-brief.component';
+export * from './brand-brief/brand-brief.component';

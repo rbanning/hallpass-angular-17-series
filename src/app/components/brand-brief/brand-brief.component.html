@@ -1,0 +1,25 @@
+@if (brand) {
+  <div class="color">
+    <div 
+      class="block w-[100px] h-[100px]"
+      [style]="{backgroundColor: brand.color}">
+    </div>
+  </div>
+  <div class="content pt-4">
+    <div class="text-xl">{{brand.name}}</div>
+    <div class="text-sm font-mono">{{brand.industry}}</div>
+    @if(brand.archived) {
+      <div class="text-xs font-serif uppercase text-accent-600 font-light">Archived</div>
+    }
+  </div>  
+}
+@else {
+  <!-- ghost brand -->
+  <div class="color">
+    <div class="block w-[100px] h-[100px] bg-neutral-100"></div>
+  </div>
+  <div class="content pt-4">
+    <div class="bg-neutral-100 w-56 h-6 mb-2"></div>
+    <div class="bg-neutral-100 w-56 h-4"></div>
+  </div>  
+}

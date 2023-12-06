@@ -1,0 +1,11 @@
+<h1 class="flex flex-wrap items-center justify-between gap-4">
+  <span>Brands</span>
+  <button class="text-lg py-1 px-2 border-2 rounded" (click)="addRandom()">Add New Brand</button>
+</h1>
+<app-brand-brief class="my-8"></app-brand-brief>
+
+@for (brand of (brands$ | async); track brand.id) {
+  <app-brand-brief [brand]="brand" class="my-8 cursor-pointer" (click)="toggleArchived(brand)"></app-brand-brief>
+}
+
+
